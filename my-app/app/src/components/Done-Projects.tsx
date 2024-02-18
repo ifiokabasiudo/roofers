@@ -26,9 +26,9 @@ export default function DoneProjects() {
     <div className="w-full min-h-[90vh] flex flex-col text-center text-[#535353] py-16 transition-all bg-white">
       <div className="font-semibold text-[#7DBF29]">PROJECTS</div>
       <h1 className="text-3xl mb-16 text-black">Done Projects</h1>
-      <div className="flex w-full overflow-hidden">
+      <div className="flex w-full overflow-hidden flex-wrap">
         {images1.map((image, index) => (
-          <div key={index} className="w-full sm:w-1/2 md:w-1/4 h-52 flex flex-wrap justify-center items-center">
+          <div key={index} className="w-full sm:w-1/2 md:w-1/4 h-52 flex justify-center items-center">
             <Image
               src={image.item}
               alt={`image-` + index.toString}
