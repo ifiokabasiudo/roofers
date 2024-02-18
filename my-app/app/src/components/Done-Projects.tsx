@@ -14,12 +14,12 @@ export default function DoneProjects() {
     { item: Image2 },
     { item: Image3 },
     { item: Image4 },
-  ];
-  const images2: any[] = [
     { item: Image5 },
     { item: Image6 },
     { item: Image7 },
     { item: Image8 },
+  ];
+  const images2: any[] = [
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function DoneProjects() {
       <h1 className="text-3xl mb-16 text-black">Done Projects</h1>
       <div className="flex w-full overflow-hidden">
         {images1.map((image, index) => (
-          <div key={index} className="w-1/4 h-52 flex justify-center items-center">
+          <div key={index} className="w-full sm:w-1/2 md:w-1/4 h-52 flex flex-wrap justify-center items-center">
             <Image
               src={image.item}
               alt={`image-` + index.toString}
@@ -38,7 +38,7 @@ export default function DoneProjects() {
           </div>
         ))}
       </div>
-      <div className="flex w-full">
+      {/* <div className="flex w-full">
         {images2.map((image, index) => (
           <div key={index} className="w-1/4 h-52  flex justify-center items-center">
             <Image
@@ -49,7 +49,7 @@ export default function DoneProjects() {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
