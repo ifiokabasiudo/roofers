@@ -17,6 +17,7 @@ export default function Navbar() {
         <ul className="flex justify-center items-center h-full">
           {navbarItems.map((item, index) => (
             <a
+              key={index}
               className="flex justify-center items-center text-[.8rem] font-medium transition-all duration-300 ease-in-out hover:bg-[#7DBF29] h-full px-4"
               href="#"
             >

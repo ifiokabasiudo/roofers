@@ -36,7 +36,7 @@ export default function ContactUs() {
           <h1 className="font-semibold text-xl">Services</h1>
           <ul>
             {services.map((service, index) => (
-              <li className="flex items-center">
+              <li key={index} className="flex items-center">
                 <svg
                   className="mr-3"
                   xmlns="http://www.w3.org/2000/svg"
