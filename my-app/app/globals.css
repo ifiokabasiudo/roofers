@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,13 +19,51 @@
 }
 
 body {
+  background: #EDEFF4;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.bg-image {
+  background-image: url("../public/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+/* .slick-list {
+  overflow-x: clip !important;
+  overflow: visible;
+} */
+
+.slick-list {
+  overflow-x: clip !important;
+  
+   overflow-y: visible !important;
+}
+
+@media screen {
+  
+}
+
+@media (max-width: 1185px) {
+  .getQuoteHide {
+    display: none;
+  }
+  .getQuoteCenter {
+    justify-content: center;
+  }
+  /* .getQuoteShow {
+
+  } */
+}
+
+@media (min-width: 1185px) {
+  .getQuoteShow {
+    display: none;
+  } 
 }
 
 @layer utilities {

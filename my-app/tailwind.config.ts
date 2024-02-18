@@ -9,10 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+        'hero-bg': "url('/hero-bg.png')",
+        'bg-1': "url('/image1.jpg')",
+        'bg-2': "url('/image2.jpg')",
+        'bg-3': "url('/image3.jpg')",
+        'bg-4': "url('/image4.jpg')",
+        'bg-5': "url('/image5.jpg')",
+        'bg-6': "url('/image6.jpg')",
+        'bg-7': "url('/image7.jpg')",
+        'bg-8': "url('/image8.jpg')",
+      },fontFamily: {
+        "montserrat": ["Montserrat", "sans-serif"],
+      }
     },
   },
   plugins: [],
